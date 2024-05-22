@@ -8,7 +8,7 @@ import retrofit2.http.Query;
  * http://www.rijksmuseum.nl/
  */
 
-public interface OpenRijks {
+public interface RijksService {
 
     @GET("/api/en/collection")
     Single<ArtObjects> getPage(
