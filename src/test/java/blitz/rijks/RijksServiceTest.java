@@ -21,6 +21,7 @@ public class RijksServiceTest {
         assertNotNull(artObject.longTitle);
         assertNotNull(artObject.principalOrFirstMaker);
         assertNotNull(artObject.webImage);
+        assertNotNull(artObject.webImage.url);
     }
 
     @Test
@@ -40,6 +41,7 @@ public class RijksServiceTest {
         assertNotNull(artObject.longTitle);
         assertNotNull(artObject.principalOrFirstMaker);
         assertNotNull(artObject.webImage);
+        assertNotNull(artObject.webImage.url);
     }
 
     @Test
@@ -59,5 +61,6 @@ public class RijksServiceTest {
         assertNotNull(artObject.longTitle);
         assertNotNull(artObject.principalOrFirstMaker);
         assertNotNull(artObject.webImage);
+        assertNotNull(artObject.webImage.url);
     }
 }
