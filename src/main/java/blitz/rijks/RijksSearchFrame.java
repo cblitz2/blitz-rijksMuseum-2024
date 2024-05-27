@@ -124,10 +124,9 @@ public class RijksSearchFrame extends JFrame {
                 "Error", JOptionPane.ERROR_MESSAGE);
     }
 
-    private void showLargeImage(ArtObject artObject) {
-        JFrame frame = new JFrame(artObject.title);
-        frame.setSize(800, 600);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+    public void showLargeImage(ArtObject artObject) {
+        setSize(800, 600);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         try {
             URL url = new URL(artObject.webImage.url);
@@ -138,8 +137,8 @@ public class RijksSearchFrame extends JFrame {
             JLabel imageLabel = new JLabel(imageIcon);
 
             JScrollPane scrollPane = new JScrollPane(imageLabel);
-            frame.add(scrollPane);
-            frame.setVisible(true);
+            add(scrollPane);
+            setVisible(true);
         } catch (IOException e) {
             e.printStackTrace();
         }
