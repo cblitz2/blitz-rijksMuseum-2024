@@ -6,8 +6,8 @@ import java.awt.*;
 import java.io.IOException;
 import java.net.URL;
 
-public class showLargeImage extends JFrame {
-    public showLargeImage(ArtObject artObject) {
+public class ShowLargeImage extends JFrame {
+    public ShowLargeImage(ArtObject artObject) {
         setSize(800, 600);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 

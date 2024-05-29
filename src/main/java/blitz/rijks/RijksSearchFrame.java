@@ -106,7 +106,7 @@ public class RijksSearchFrame extends JFrame {
                 imageLabel.setVerticalTextPosition(JLabel.BOTTOM);
                 imageLabel.addMouseListener(new java.awt.event.MouseAdapter() {
                     public void mouseClicked(java.awt.event.MouseEvent evt) {
-                        new showLargeImage(artObject);
+                        new ShowLargeImage(artObject);
                     }
                 });
                 resultPanel.add(imageLabel);
